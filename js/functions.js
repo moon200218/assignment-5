@@ -12,10 +12,10 @@
 //     const nominated_button = document.getElementById(button);
 //     nominated_button.classList.add('bg-lime-300', 'py-3', 'px-7', 'rounded-md', 'font-semibold');
 
-function change_button_state(button){
+function change_button_state(button) {
     const button_container = document.querySelectorAll('.button-container button');
-    for (const x of button_container){
-        if (x.id == button){
+    for (const x of button_container) {
+        if (x.id == button) {
             x.className = '';
             x.classList.add('bg-lime-300', 'py-3', 'px-9', 'rounded-md', 'font-semibold');
 
@@ -30,8 +30,64 @@ function change_button_state(button){
 
 }
 
+function donate(amount, location, title) {
+    let wallet = document.getElementById('wallet').innerText;
+    let place = document.getElementById(location).innerText;
+    let log = document.getElementById('logging-station');
 
 
-    
+    let donation_amount = parseFloat(amount);
+
+    let wallet_value = parseFloat(wallet);
+    let place_value = parseFloat(place);
+
+    let new_value = 0;
+
+
+    if (typeof donation_amount !== 'number' || isNaN(donation_amount) || donation_amount < 0) {
+        alert('Please enter a valid number.');
+
+
+    }
+    else {
+        if (donation_amount > wallet) {
+            alert('you have no money left to donate!');
+        }
+        else {
+            // <div class="space-y-4 mb-3 border rounded-lg p-6">
+            //         <h1 class="font-bold text-lg">95600 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+            //         <p class="font-extralight text-stone-450">Date: Tue sep 17 2024 08:39:11 +600 Bangladesh standard Time</p>
+
+            //     </div>
+            wallet_value = wallet_value - donation_amount;
+            new_value = place_value + donation_amount;
+            document.getElementById('wallet').innerText = wallet_value;
+            document.getElementById(location).innerText = new_value;
+            let entry_container = document.createElement('div');
+            let entry = document.createElement('h1');
+            let date_container = document.createElement('p');
+            entry_container.classList.add('space-y-4', 'mb-3', 'border', 'rounded-lg', 'p-6');
+            entry.classList.add('font-bold', 'text-lg');
+            date_container.classList.add('font-extralight', 'text-stone-450');
+
+            let date = new Date();
+
+            entry.innerText = `${donation_amount} Taka  is  donated  for ${title}`;
+            date_container.innerText = `${date}`;
+
+            entry_container.appendChild(entry);
+            entry_container.appendChild(date_container);
+
+            log.appendChild(entry_container);
+
+
+        }
+
+
+    }
+
+
+}
+
 
 
