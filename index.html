@@ -22,14 +22,18 @@
             }
         }
     </script>
+    <style>
+        /* if necessary */
+    </style>
 </head>
 
-<body class="font-[lexend]">
+<body class="">
     <main>
+        <!-- nav bar -->
         <nav class=" bg-yellow-50 pt-3 pb-9">
-            <div class="flex justify-around">
+            <div class="flex justify-around items-center">
                 <div>
-                    <button class="bg-lime-300 p-2 px-7 rounded-xl font-bold">Blog</button>
+                    <button class="bg-lime-300 p-2 px-7 rounded-md font-semibold">Blog</button>
                 </div>
                 <div class="flex items-center space-x-5">
                     <div>
@@ -46,12 +50,57 @@
                     <p>5500 BDT</p>
                 </div>
             </div>
-
-
         </nav>
+        <!-- nav bar end-->
+
+         <!-- Buttons for navigation -->
+        <section class="w-5/6 mx-auto text-center mt-20">
+            <div class="button-container space-x-5">
+                <button id="donation" class="bg-lime-300 py-3 px-9 rounded-md font-semibold">Donation</button>
+                <button id="history" class="border-gray-200 border rounded-md py-3 px-9 text-gray-600 hover:bg-gray-300 transition-colors duration-200">History</button>
+            </div>
+        </section>
+        <!-- buttons for nav end -->
+
+        <section id="donation-section" class="w-5/6 mx-auto mt-10">
+            <div class="card-container border rounded-xl flex justify-between space-x-2">
+                <div class="left-side w-1/2 m-4">
+                    <img src="./assets/noakhali.png">
+                </div>
+                <div class="right-side w-1/2">
+                    <button class="flex mt-4 mb-4 space-x-3 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1">
+                        <div>
+                            <img src="./assets/coin.png">
+                        </div>
+                        <div>
+                            <p> 0 BDT</p>
+
+                        </div>
+                    </button>
+                    <h3 class="mt-4 mb-4 font-bold text-xl">Donate for Flood at noakhali, Bangladesh</h3>
+                    <p class="mt-4 mb-6 font-extralight text-gray-700 pr-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, qui mollitia dolores excepturi fugiat eius nobis, facilis aspernatur recusandae magni illum voluptatibus nam vitae inventore tenetur expedita saepe, repellat non.</p>
+
+                    <form class="mt-4 mb-4 mr-4 space-y-3">
+                        <input type="text" placeholder="Amount" class="border w-full p-3 rounded-sm">
+                        <button class="bg-lime-300 py-3 px-7 w-full rounded-md font-semibold hover:bg-lime-400 transition-colors duration-200">Donate Now</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+
+
+
+        </section>
+        <!-- History Section start -->
+        <section id="history-section" class="hidden w-5/6 mx-auto">
+            <h1>History</h1>
+        </section>
+        <!-- History section end -->
     </main>
 
     <script src="js/features.js"></script>
+    <script src="js/functions.js"></script>
 
 </body>
 
