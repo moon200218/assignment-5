@@ -23,7 +23,7 @@ function change_button_state(button) {
         }
         else {
             x.className = '';
-            x.classList.add('border-gray-200', 'border', 'rounded-md', 'py-3', 'px-9', 'text-gray-600', 'hover:bg-gray-300', 'transition-colors', 'duration-200', 'md:text-base', 'text-sm');
+            x.classList.add('bg-white', 'border-gray-200', 'border', 'rounded-md', 'py-3', 'px-9', 'text-gray-600', 'hover:bg-gray-300', 'transition-colors', 'duration-200', 'md:text-base', 'text-sm');
         }
     }
 

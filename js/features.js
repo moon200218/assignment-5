@@ -33,3 +33,28 @@ document.getElementById('noakhali-button').addEventListener('click', function(ev
 
 
 })
+// feni donation handler
+document.getElementById('feni-button').addEventListener('click', function(event){
+    event.preventDefault();
+    let amount = document.getElementById('f-amount').value;
+    let title = document.getElementById('feni-title').innerText;
+
+    donate(amount, 'feni-amount', title);
+    document.getElementById('f-amount').value = '';
+    
+
+
+})
+
+// Quota-protest
+document.getElementById('quota-button').addEventListener('click', function(event){
+    event.preventDefault();
+    let amount = document.getElementById('q-amount').value;
+    let title = document.getElementById('quota-title').innerText;
+
+    donate(amount, 'quota-amount', title);
+    document.getElementById('q-amount').value = '';
+    
+
+
+})

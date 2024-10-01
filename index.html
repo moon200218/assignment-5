@@ -33,13 +33,14 @@
         <nav class="pb-2 md:pb-3 md: bg-yellow-50 pt-2 md:pt-3 mb:pb-9 sticky top-0">
             <div class="flex justify-around items-center">
                 <div>
-                    <button class="px-4 py-2 bg-lime-300 md:p-2 md:px-7 rounded-md md:font-semibold md:text-base text-sm">Blog</button>
+                    <button
+                        class="px-4 py-2 bg-lime-300 md:p-2 md:px-7 rounded-md md:font-semibold md:text-base text-sm">Blog</button>
                 </div>
                 <div class="flex items-center md:space-x-5">
                     <div>
-                        <img class="pl-7 md:p-0" src="./assets/logo.png" alt="">
+                        <img class="hidden md:block pl-7 md:p-0" src="./assets/logo.png" alt="">
                     </div>
-                    <h3 class="hidden md:block font-semibold">Donate Bangladesh</h3>
+                    <h3 class="font-semibold md:text-base text-sm md:p-0 pl-6 md:not-italic italic">Donate Bangladesh</h3>
 
                 </div>
                 <div class="flex items-center">
@@ -61,48 +62,131 @@
         <!-- nav bar end-->
 
         <!-- Buttons for navigation -->
-        <section class="w-5/6 mx-auto text-center md:mt-20 mt-10">
+        <section class="w-5/6 mx-auto text-center md:mt-20 mt-10 sticky top-20">
             <div class="button-container space-x-5">
-                <button id="donation" class="bg-lime-300 py-3 px-9 rounded-md font-semibold md:text-base text-sm">Donation</button>
+                <button id="donation"
+                    class="bg-lime-300 py-3 px-9 rounded-md font-semibold md:text-base text-sm">Donation</button>
                 <button id="history"
-                    class="border-gray-200 border rounded-md py-3 px-9 text-gray-600 hover:bg-gray-300 transition-colors duration-200 md:text-base text-sm">History</button>
+                    class="bg-white border-gray-200 border rounded-md py-3 px-9 text-gray-600 hover:bg-gray-300 transition-colors duration-200 md:text-base text-sm ">History</button>
             </div>
         </section>
         <!-- buttons for nav end -->
 
-         <!-- Noakhali donation card -->
-        <section id="donation-section" class="w-5/6 mx-auto mt-10">
+        <!-- Noakhali donation card -->
+        <section id="donation-section" class="w-3/4 mx-auto mt-10 space-y-5">
             <div class="card-container border rounded-xl md:flex  space-x-2">
-                <div class="left-side md:w-1/2 ml-4 mr-4 mt-4 md:mb-4">
-                    <img class="" src="./assets/noakhali.png" alt="">
+                <div class="left-side md:w-1/2 ml-4 mr-4 mt-4 md:mb-4 bg-[url('./assets/noakhali.png')] border rounded-xl bg-cover">
+                    <img class="md:hidden block" src="./assets/noakhali.png" alt="">
                 </div>
                 <div class="right-side md:w-1/2 mx-auto">
                     <div class="md:block flex justify-center">
                         <button
-                        class="flex mt-4 mb-4 space-x-2 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1">
-                        <div>
-                            <img src="./assets/coin.png" alt="">
-                        </div>
-                        <div id="noakhali" class="flex space-x-1">
-                            <p id="noakhali-amount">0</p>
-                            <p>BDT</p>
+                            class="flex mt-4 mb-4 space-x-2 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1 mr-2">
+                            <div>
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+                            <div id="noakhali" class="flex space-x-1">
+                                <p id="noakhali-amount">0</p>
+                                <p>BDT</p>
 
 
-                        </div>
-                    </button>
+                            </div>
+                        </button>
                     </div>
                     <div class="md:flex">
                         <h3 class="font-bold text-lg pr-2">Donate for</h3>
                         <h3 id="noakhali-title" class="font-bold text-lg">Flood at noakhali, Bangladesh</h3>
                     </div>
-                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3 md:text-base text-sm">Lorem ipsum dolor sit amet, consectetur
+                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3 md:text-base text-sm">Lorem ipsum dolor sit
+                        amet, consectetur
                         adipisicing elit. Voluptas, qui mollitia dolores excepturi fugiat eius nobis, facilis aspernatur
                         recusandae magni illum voluptatibus nam vitae inventore tenetur expedita saepe, repellat non.
                     </p>
 
-                    <form class="mt-4 mb-4 mr-4 space-y-3">
+                    <form class="mt-4 mb-4 mr-4 space-y-3 pt-5">
                         <input id="n-amount" type="text" placeholder="Amount" class="border w-full p-3 rounded-sm">
                         <button id="noakhali-button"
+                            class="bg-lime-300 py-3 px-7 w-full rounded-md font-semibold hover:bg-lime-400 transition-colors duration-200">Donate
+                            Now</button>
+                    </form>
+
+                </div>
+
+            </div>
+            <!-- Donation card #2 - Feni -->
+            <div class="card-container border rounded-xl md:flex space-x-2">
+                <div class="left-side md:w-1/2 ml-4 mr-4 mt-4 md:mb-4 bg-[url('./assets/feni.png')] border rounded-xl bg-cover">
+                    <img class="md:hidden block" src="./assets/feni.png" alt="">
+                </div>
+                <div class="right-side md:w-1/2 mx-auto">
+                    <div class="md:block flex justify-center">
+                        <button
+                            class="flex mt-4 mb-4 space-x-2 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1 mr-2">
+                            <div>
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+                            <div id="feni" class="flex space-x-1">
+                                <p id="feni-amount">0</p>
+                                <p>BDT</p>
+
+
+                            </div>
+                        </button>
+                    </div>
+                    <div class="md:flex">
+                        <h3 class="font-bold text-lg pr-2">Donate for</h3>
+                        <h3 id="feni-title" class="font-bold text-lg">Flood relief in Feni, Bangladesh</h3>
+                    </div>
+                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3 md:text-base text-sm">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipisicing elit. Voluptas, qui mollitia dolores excepturi fugiat eius nobis, facilis aspernatur
+                        recusandae magni illum voluptatibus nam vitae inventore tenetur expedita saepe, repellat non.
+                    </p>
+
+                    <form class="mt-4 mb-4 mr-4 space-y-3 pt-5">
+                        <input id="f-amount" type="text" placeholder="Amount" class="border w-full p-3 rounded-sm">
+                        <button id="feni-button"
+                            class="bg-lime-300 py-3 px-7 w-full rounded-md font-semibold hover:bg-lime-400 transition-colors duration-200">Donate
+                            Now</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Quota Movement -->
+            <div class="card-container border rounded-xl md:flex space-x-2">
+                <div class="left-side md:w-1/2 ml-4 mr-4 mt-4 md:mb-4 bg-[url('./assets/quota-protest.png')] border rounded-xl bg-cover">
+                    <img class="md:hidden block" src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="right-side md:w-1/2 mx-auto">
+                    <div class="md:block flex justify-center">
+                        <button
+                            class="flex mt-4 mb-4 space-x-2 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1 mr-2">
+                            <div>
+                                <img src="./assets/coin.png" alt="">
+                            </div>
+                            <div id="quota" class="flex space-x-1">
+                                <p id="quota-amount">0</p>
+                                <p>BDT</p>
+
+
+                            </div>
+                        </button>
+                    </div>
+                    <div class="md:flex">
+                        <h3 class="font-bold text-lg pr-2">Aid for</h3>
+                        <h3 id="quota-title" class="font-bold text-lg">Injured in quota protests</h3>
+                    </div>
+                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3 md:text-base text-sm">Lorem ipsum dolor sit
+                        amet, consectetur
+                        adipisicing elit. Voluptas, qui mollitia dolores excepturi fugiat eius nobis, facilis aspernatur
+                        recusandae magni illum voluptatibus nam vitae inventore tenetur expedita saepe, repellat non.
+                    </p>
+
+                    <form class="mt-4 mb-4 mr-4 space-y-3 pt-5">
+                        <input id="q-amount" type="text" placeholder="Amount" class="border w-full p-3 rounded-sm">
+                        <button id="quota-button"
                             class="bg-lime-300 py-3 px-7 w-full rounded-md font-semibold hover:bg-lime-400 transition-colors duration-200">Donate
                             Now</button>
                     </form>
@@ -114,6 +198,8 @@
 
 
         </section>
+
+
         <!-- History Section start -->
         <section id="history-section" class="hidden w-5/6 mx-auto mt-7">
             <div id="logging-station" class="">
