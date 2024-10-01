@@ -1,16 +1,3 @@
-// "bg-lime-300 py-3 px-7 rounded-md font-semibold
-// "border-gray-200 border rounded-md py-3 px-8 text-gray-600 hover:bg-gray-300 transition-colors duration-200
-
-// function change_button_state(button){
-//     const button_container = document.getElementById('button-container');
-//     for (const x of button_container){
-//         if ()
-//         x.className = '';
-//         x.classList.add('border-gray-200', 'border', 'rounded-md', 'py-3', 'px-8', 'text-gray-600', 'hover:bg-gray-300', 'transition-colors', 'duration-200');
-
-//     }
-//     const nominated_button = document.getElementById(button);
-//     nominated_button.classList.add('bg-lime-300', 'py-3', 'px-7', 'rounded-md', 'font-semibold');
 
 function change_button_state(button) {
     const button_container = document.querySelectorAll('.button-container button');
@@ -54,11 +41,7 @@ function donate(amount, location, title) {
             alert('you have no money left to donate!');
         }
         else {
-            // <div class="space-y-4 mb-3 border rounded-lg p-6">
-            //         <h1 class="font-bold text-lg">95600 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-            //         <p class="font-extralight text-stone-450">Date: Tue sep 17 2024 08:39:11 +600 Bangladesh standard Time</p>
 
-            //     </div>
             wallet_value = wallet_value - donation_amount;
             new_value = place_value + donation_amount;
             document.getElementById('wallet').innerText = wallet_value;
