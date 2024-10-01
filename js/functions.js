@@ -17,13 +17,13 @@ function change_button_state(button) {
     for (const x of button_container) {
         if (x.id == button) {
             x.className = '';
-            x.classList.add('bg-lime-300', 'py-3', 'px-9', 'rounded-md', 'font-semibold');
+            x.classList.add('bg-lime-300', 'py-3', 'px-9', 'rounded-md', 'font-semibold', 'md:text-base', 'text-sm');
 
 
         }
         else {
             x.className = '';
-            x.classList.add('border-gray-200', 'border', 'rounded-md', 'py-3', 'px-9', 'text-gray-600', 'hover:bg-gray-300', 'transition-colors', 'duration-200');
+            x.classList.add('border-gray-200', 'border', 'rounded-md', 'py-3', 'px-9', 'text-gray-600', 'hover:bg-gray-300', 'transition-colors', 'duration-200', 'md:text-base', 'text-sm');
         }
     }
 
@@ -44,7 +44,7 @@ function donate(amount, location, title) {
     let new_value = 0;
 
 
-    if (typeof donation_amount !== 'number' || isNaN(donation_amount) || donation_amount < 0) {
+    if (typeof donation_amount !== 'number' || isNaN(donation_amount) || donation_amount < 0 || donation_amount == 0) {
         alert('Please enter a valid number.');
 
 
@@ -67,8 +67,8 @@ function donate(amount, location, title) {
             let entry = document.createElement('h1');
             let date_container = document.createElement('p');
             entry_container.classList.add('space-y-4', 'mb-3', 'border', 'rounded-lg', 'p-6');
-            entry.classList.add('font-bold', 'text-lg');
-            date_container.classList.add('font-extralight', 'text-stone-450');
+            entry.classList.add('font-bold', 'md:text-lg', 'text-sm');
+            date_container.classList.add('font-extralight', 'text-stone-450', 'md:text-base', 'text-sm');
 
             let date = new Date();
 

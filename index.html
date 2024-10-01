@@ -27,19 +27,19 @@
     </style>
 </head>
 
-<body class="">
+<body class="font-[lexend]">
     <main>
         <!-- nav bar -->
-        <nav class=" bg-yellow-50 pt-3 pb-9">
+        <nav class="pb-2 md:pb-3 md: bg-yellow-50 pt-2 md:pt-3 mb:pb-9 sticky top-0">
             <div class="flex justify-around items-center">
                 <div>
-                    <button class="bg-lime-300 p-2 px-7 rounded-md font-semibold">Blog</button>
+                    <button class="px-4 py-2 bg-lime-300 md:p-2 md:px-7 rounded-md md:font-semibold md:text-base text-sm">Blog</button>
                 </div>
-                <div class="flex items-center space-x-5">
+                <div class="flex items-center md:space-x-5">
                     <div>
-                        <img src="./assets/logo.png" alt="">
+                        <img class="pl-7 md:p-0" src="./assets/logo.png" alt="">
                     </div>
-                    <h3 class="font-semibold">Donate Bangladesh</h3>
+                    <h3 class="hidden md:block font-semibold">Donate Bangladesh</h3>
 
                 </div>
                 <div class="flex items-center">
@@ -51,27 +51,34 @@
                     <p>BDT</p>
                 </div>
             </div>
+            <!-- <div class="md:hidden flex justify-center text-center pr-4 pt-3">
+                <h3 class="font-semibold underline italic">Donate BD</h3>
+                
+                
+
+            </div> -->
         </nav>
         <!-- nav bar end-->
 
         <!-- Buttons for navigation -->
-        <section class="w-5/6 mx-auto text-center mt-20">
+        <section class="w-5/6 mx-auto text-center md:mt-20 mt-10">
             <div class="button-container space-x-5">
-                <button id="donation" class="bg-lime-300 py-3 px-9 rounded-md font-semibold">Donation</button>
+                <button id="donation" class="bg-lime-300 py-3 px-9 rounded-md font-semibold md:text-base text-sm">Donation</button>
                 <button id="history"
-                    class="border-gray-200 border rounded-md py-3 px-9 text-gray-600 hover:bg-gray-300 transition-colors duration-200">History</button>
+                    class="border-gray-200 border rounded-md py-3 px-9 text-gray-600 hover:bg-gray-300 transition-colors duration-200 md:text-base text-sm">History</button>
             </div>
         </section>
         <!-- buttons for nav end -->
 
          <!-- Noakhali donation card -->
         <section id="donation-section" class="w-5/6 mx-auto mt-10">
-            <div class="card-container border rounded-xl flex justify-between space-x-2">
-                <div class="left-side w-1/2 m-4">
-                    <img src="./assets/noakhali.png" alt="">
+            <div class="card-container border rounded-xl md:flex  space-x-2">
+                <div class="left-side md:w-1/2 ml-4 mr-4 mt-4 md:mb-4">
+                    <img class="" src="./assets/noakhali.png" alt="">
                 </div>
-                <div class="right-side w-1/2">
-                    <button
+                <div class="right-side md:w-1/2 mx-auto">
+                    <div class="md:block flex justify-center">
+                        <button
                         class="flex mt-4 mb-4 space-x-2 items-center bg-slate-100 border border-none rounded-lg pt-2 pb-2 pr-2 pl-1">
                         <div>
                             <img src="./assets/coin.png" alt="">
@@ -83,11 +90,12 @@
 
                         </div>
                     </button>
-                    <div class="flex">
+                    </div>
+                    <div class="md:flex">
                         <h3 class="font-bold text-lg pr-2">Donate for</h3>
                         <h3 id="noakhali-title" class="font-bold text-lg">Flood at noakhali, Bangladesh</h3>
                     </div>
-                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3">Lorem ipsum dolor sit amet, consectetur
+                    <p class="mt-4 mb-6 font-extralight text-stone-500 pr-3 md:text-base text-sm">Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Voluptas, qui mollitia dolores excepturi fugiat eius nobis, facilis aspernatur
                         recusandae magni illum voluptatibus nam vitae inventore tenetur expedita saepe, repellat non.
                     </p>
@@ -110,8 +118,8 @@
         <section id="history-section" class="hidden w-5/6 mx-auto mt-7">
             <div id="logging-station" class="">
                 <!-- <div class="space-y-4 mb-3 border rounded-lg p-6">
-                    <h1 class="font-bold text-lg">95600 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
-                    <p class="font-extralight text-stone-450">Date: Tue sep 17 2024 08:39:11 +600 Bangladesh standard Time</p>
+                    <h1 class="font-bold md:text-lg text-sm">95600 Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
+                    <p class="font-extralight text-stone-450 md:text-base text-sm">Date: Tue sep 17 2024 08:39:11 +600 Bangladesh standard Time</p>
 
                 </div> -->
 
